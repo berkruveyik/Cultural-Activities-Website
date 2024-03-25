@@ -1,0 +1,62 @@
+.homee{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-flow: column;
+    position: relative;
+   z-index: 0;
+
+}
+
+.homee .content {
+    text-align: center;
+    position: absolute; 
+    top: 20%; 
+    transform: translateY(-50%); 
+}
+
+.homee .content h3 {
+    font-size: 4.5rem;
+    color: azure;
+    text-transform: uppercase; 
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .1);
+}
+
+.homee .content p {
+    font-size: 2.5rem;
+    color: azure;
+    padding: .5rem 0;
+}
+
+
+.homee .video-container video{
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.homee .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    background-color: rgba(0, 0, 0, .7);
+    position: relative;
+    top: 10rem;
+}
+
+.homee .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: azure;
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+
+.homee .controls .vid-btn.active{
+    background: var(--orange)
+}
